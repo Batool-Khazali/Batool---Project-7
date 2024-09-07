@@ -1,0 +1,1555 @@
+2024-09-07 02:58:20.587 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 02:58:20.779 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 02:58:20.901 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 02:58:20.902 +03:00 [INF] Hosting environment: Development
+2024-09-07 02:58:20.902 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 02:58:21.145 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger - null null
+2024-09-07 02:58:21.335 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 02:58:21.336 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger - 301 null null 191.5508ms
+2024-09-07 02:58:21.400 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 64.3996ms
+2024-09-07 02:58:21.414 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/swagger-ui.css - null null
+2024-09-07 02:58:21.423 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-09-07 02:58:21.424 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/swagger-ui.css - 200 143943 text/css 9.8864ms
+2024-09-07 02:58:21.425 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/swagger-ui-bundle.js - null null
+2024-09-07 02:58:21.425 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/swagger-ui-standalone-preset.js - null null
+2024-09-07 02:58:21.425 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 02:58:21.427 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 02:58:21.428 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 2.5799ms
+2024-09-07 02:58:21.431 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-09-07 02:58:21.436 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 10.7277ms
+2024-09-07 02:58:21.442 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-09-07 02:58:21.457 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 32.2689ms
+2024-09-07 02:58:21.466 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.1376ms
+2024-09-07 02:58:21.580 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 02:58:21.602 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/favicon-32x32.png - null null
+2024-09-07 02:58:21.603 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-09-07 02:58:21.604 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/favicon-32x32.png - 200 628 image/png 1.8492ms
+2024-09-07 02:58:21.648 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.3535ms
+2024-09-07 02:59:51.629 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/LoginAndRegister/register - multipart/form-data; boundary=----WebKitFormBoundaryA74X0bKcL7NQy3Lx 351
+2024-09-07 02:59:51.634 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 02:59:51.699 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions options) in C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\Program.cs:line 75
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-07 02:59:51.730 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/LoginAndRegister/register - 500 null text/plain; charset=utf-8 101.0566ms
+2024-09-07 03:02:24.976 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 03:02:25.036 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 03:02:25.045 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 03:02:25.045 +03:00 [INF] Hosting environment: Development
+2024-09-07 03:02:25.046 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 03:02:25.057 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 03:02:25.184 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 126.9885ms
+2024-09-07 03:02:25.204 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 03:02:25.206 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 2.4744ms
+2024-09-07 03:02:25.208 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 03:02:25.228 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.3053ms
+2024-09-07 03:02:25.334 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 03:02:25.397 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 62.6719ms
+2024-09-07 03:02:41.528 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/LoginAndRegister/register - multipart/form-data; boundary=----WebKitFormBoundaryZ809TJbbswDfeV5A 341
+2024-09-07 03:02:41.533 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 03:02:41.579 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.LoginAndRegister.Register (BookLand - Batool)'
+2024-09-07 03:02:41.612 +03:00 [INF] Route matched with {action = "Register", controller = "LoginAndRegister"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(BookLand___Batool.DTOs.UsersDTO) on controller BookLand___Batool.Controllers.LoginAndRegister (BookLand - Batool).
+2024-09-07 03:02:41.893 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-07 03:02:41.939 +03:00 [INF] Executed action BookLand___Batool.Controllers.LoginAndRegister.Register (BookLand - Batool) in 323.1735ms
+2024-09-07 03:02:41.939 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.LoginAndRegister.Register (BookLand - Batool)'
+2024-09-07 03:02:41.941 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/LoginAndRegister/register - 400 null application/problem+json; charset=utf-8 412.6992ms
+2024-09-07 03:04:30.093 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 03:04:30.200 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 03:04:30.209 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 03:04:30.209 +03:00 [INF] Hosting environment: Development
+2024-09-07 03:04:30.210 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 03:04:30.221 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 03:04:30.369 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 149.4736ms
+2024-09-07 03:04:30.390 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 03:04:30.390 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 03:04:30.393 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 2.3666ms
+2024-09-07 03:04:30.411 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.9039ms
+2024-09-07 03:04:30.493 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 03:04:30.555 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.7765ms
+2024-09-07 03:04:58.106 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/LoginAndRegister/register - multipart/form-data; boundary=----WebKitFormBoundaryYALyFo4XG5AUsUKO 351
+2024-09-07 03:04:58.111 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 03:04:58.124 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.LoginAndRegister.Register (BookLand - Batool)'
+2024-09-07 03:04:58.134 +03:00 [INF] Route matched with {action = "Register", controller = "LoginAndRegister"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(BookLand___Batool.DTOs.UsersDTO) on controller BookLand___Batool.Controllers.LoginAndRegister (BookLand - Batool).
+2024-09-07 03:04:59.344 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password_hash], [u].[password_salt], [u].[phone_number], [u].[points]
+FROM [users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 03:04:59.445 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 255) (DbType = AnsiString), @p1='?' (Size = 255) (DbType = AnsiString), @p2='?' (Size = 255) (DbType = AnsiString), @p3='?' (Size = 255) (DbType = AnsiString), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (Size = 255) (DbType = AnsiString), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [users] ([address], [email], [image], [name], [password_hash], [password_salt], [phone_number], [points])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-09-07 03:04:59.463 +03:00 [INF] Executing OkObjectResult, writing value of type 'BookLand___Batool.Models.User'.
+2024-09-07 03:04:59.477 +03:00 [INF] Executed action BookLand___Batool.Controllers.LoginAndRegister.Register (BookLand - Batool) in 1340.866ms
+2024-09-07 03:04:59.477 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.LoginAndRegister.Register (BookLand - Batool)'
+2024-09-07 03:04:59.482 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/LoginAndRegister/register - 200 null application/json; charset=utf-8 1375.961ms
+2024-09-07 03:05:20.721 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/LoginAndRegister/login - multipart/form-data; boundary=----WebKitFormBoundary16KhcGoIE3yCahRg 351
+2024-09-07 03:05:20.723 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 03:05:20.724 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.LoginAndRegister.Login (BookLand - Batool)'
+2024-09-07 03:05:20.728 +03:00 [INF] Route matched with {action = "Login", controller = "LoginAndRegister"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(BookLand___Batool.DTOs.UsersDTO) on controller BookLand___Batool.Controllers.LoginAndRegister (BookLand - Batool).
+2024-09-07 03:05:20.743 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__model_Email_0='?' (Size = 255) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[address], [u].[email], [u].[image], [u].[name], [u].[password_hash], [u].[password_salt], [u].[phone_number], [u].[points]
+FROM [users] AS [u]
+WHERE [u].[email] = @__model_Email_0
+2024-09-07 03:05:20.754 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-09-07 03:05:20.754 +03:00 [INF] Executed action BookLand___Batool.Controllers.LoginAndRegister.Login (BookLand - Batool) in 26.2788ms
+2024-09-07 03:05:20.754 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.LoginAndRegister.Login (BookLand - Batool)'
+2024-09-07 03:05:20.755 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/LoginAndRegister/login - 200 null null 34.2529ms
+2024-09-07 11:03:47.522 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 11:03:47.534 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 11.5476ms
+2024-09-07 11:03:47.562 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 11:03:47.563 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 0.8864ms
+2024-09-07 11:03:47.565 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 11:03:47.572 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.7937ms
+2024-09-07 11:03:47.739 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 11:03:47.744 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.1506ms
+2024-09-07 12:33:17.243 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 12:33:17.544 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 12:33:17.678 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 12:33:17.678 +03:00 [INF] Hosting environment: Development
+2024-09-07 12:33:17.678 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 12:33:17.966 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 12:33:18.342 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 380.312ms
+2024-09-07 12:33:18.381 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 12:33:18.385 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 3.3487ms
+2024-09-07 12:33:18.394 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 12:33:18.444 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.026ms
+2024-09-07 12:33:18.577 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 12:33:18.684 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 106.6949ms
+2024-09-07 12:39:47.927 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 12:39:48.008 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 12:39:48.018 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 12:39:48.019 +03:00 [INF] Hosting environment: Development
+2024-09-07 12:39:48.019 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 12:39:48.028 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 12:39:48.171 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 142.8152ms
+2024-09-07 12:39:48.194 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 12:39:48.197 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 12:39:48.197 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 2.9688ms
+2024-09-07 12:39:48.223 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.8608ms
+2024-09-07 12:39:48.298 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 12:39:48.382 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 84.1398ms
+2024-09-07 12:48:25.341 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 12:48:25.409 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 12:48:25.417 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 12:48:25.417 +03:00 [INF] Hosting environment: Development
+2024-09-07 12:48:25.417 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 12:48:25.427 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 12:48:25.581 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 155.1709ms
+2024-09-07 12:48:25.604 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 12:48:25.604 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 12:48:25.608 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 3.1715ms
+2024-09-07 12:48:25.631 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.8046ms
+2024-09-07 12:48:25.698 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 12:48:25.772 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.1491ms
+2024-09-07 12:50:35.227 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder - application/json 336
+2024-09-07 12:50:35.232 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 12:50:35.298 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 12:50:35.309 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO]) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 12:50:35.626 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-09-07 12:50:35.704 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 390.7978ms
+2024-09-07 12:50:35.704 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 12:50:35.706 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder - 400 null application/problem+json; charset=utf-8 478.8241ms
+2024-09-07 12:50:57.711 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder - application/json 334
+2024-09-07 12:50:57.714 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 12:50:57.716 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 12:50:57.717 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO]) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 12:50:59.158 +03:00 [INF] Executed DbCommand (50ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 50) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Size = 50) (DbType = AnsiString), @p12='?' (DbType = Int32), @p13='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [order_items] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2)) AS i ([book_id], [format], [order_id], [price], [quantity], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([book_id], [format], [order_id], [price], [quantity])
+VALUES (i.[book_id], i.[format], i.[order_id], i.[price], i.[quantity])
+OUTPUT INSERTED.[id], i._Position;
+2024-09-07 12:50:59.229 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BookLand___Batool.Models.MyDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:c6f4b3c6-1b4a-405b-ad3a-0f9f0738a6f7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:c6f4b3c6-1b4a-405b-ad3a-0f9f0738a6f7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-09-07 12:50:59.232 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 1515.0463ms
+2024-09-07 12:50:59.233 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 12:50:59.234 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:c6f4b3c6-1b4a-405b-ad3a-0f9f0738a6f7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder(List`1 order) in C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\Controllers\OrdersController.cs:line 50
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-07 12:50:59.258 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder - 500 null text/plain; charset=utf-8 1547.098ms
+2024-09-07 12:51:23.573 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder - application/json 112
+2024-09-07 12:51:23.574 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 12:51:23.578 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 12:51:23.578 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO]) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 12:51:23.642 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [order_items] ([book_id], [format], [order_id], [price], [quantity])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-09-07 12:51:23.643 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BookLand___Batool.Models.MyDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:c6f4b3c6-1b4a-405b-ad3a-0f9f0738a6f7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:c6f4b3c6-1b4a-405b-ad3a-0f9f0738a6f7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-09-07 12:51:23.644 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 65.5846ms
+2024-09-07 12:51:23.644 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 12:51:23.644 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:c6f4b3c6-1b4a-405b-ad3a-0f9f0738a6f7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder(List`1 order) in C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\Controllers\OrdersController.cs:line 50
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-07 12:51:23.647 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder - 500 null text/plain; charset=utf-8 73.7838ms
+2024-09-07 12:52:03.761 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 12:52:03.912 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 12:52:03.949 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 12:52:03.955 +03:00 [INF] Hosting environment: Development
+2024-09-07 12:52:03.955 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 12:52:03.981 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 12:52:04.225 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 248.3839ms
+2024-09-07 12:52:04.245 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 12:52:04.245 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 12:52:04.250 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 3.2937ms
+2024-09-07 12:52:04.289 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.1394ms
+2024-09-07 12:52:04.421 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 12:52:04.527 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 110.373ms
+2024-09-07 12:52:25.505 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder - application/json 334
+2024-09-07 12:52:25.516 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 12:52:25.578 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 12:52:25.596 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO]) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 12:53:08.224 +03:00 [INF] Executed DbCommand (29ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 50) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Size = 50) (DbType = AnsiString), @p12='?' (DbType = Int32), @p13='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [order_items] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2)) AS i ([book_id], [format], [order_id], [price], [quantity], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([book_id], [format], [order_id], [price], [quantity])
+VALUES (i.[book_id], i.[format], i.[order_id], i.[price], i.[quantity])
+OUTPUT INSERTED.[id], i._Position;
+2024-09-07 12:53:08.255 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BookLand___Batool.Models.MyDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:2a274cc7-1184-4495-a42f-83c12e648316
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:2a274cc7-1184-4495-a42f-83c12e648316
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-09-07 12:53:08.794 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 43194.2451ms
+2024-09-07 12:53:08.797 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 12:53:08.803 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:2a274cc7-1184-4495-a42f-83c12e648316
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder(List`1 order) in C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\Controllers\OrdersController.cs:line 50
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-07 12:53:08.817 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder - 500 null text/plain; charset=utf-8 43310.206ms
+2024-09-07 12:53:43.572 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 12:53:43.693 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 12:53:43.728 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 12:53:43.729 +03:00 [INF] Hosting environment: Development
+2024-09-07 12:53:43.729 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 12:53:43.761 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 12:53:44.132 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 12:53:44.132 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 12:53:44.130 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 331.0848ms
+2024-09-07 12:53:44.140 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 6.6207ms
+2024-09-07 12:53:44.196 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.1506ms
+2024-09-07 12:53:44.252 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 12:53:44.362 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.9326ms
+2024-09-07 12:53:51.379 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder - application/json 334
+2024-09-07 12:53:51.385 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 12:53:51.435 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 12:53:51.448 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO]) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 12:53:55.845 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [order_items] ([book_id], [format], [order_id], [price], [quantity])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-09-07 12:53:55.876 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BookLand___Batool.Models.MyDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:28cbe639-62e4-45c8-a76a-841a854d1ea0
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:28cbe639-62e4-45c8-a76a-841a854d1ea0
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-09-07 12:53:56.105 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 4654.3014ms
+2024-09-07 12:53:56.108 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 12:53:56.114 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:28cbe639-62e4-45c8-a76a-841a854d1ea0
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder(List`1 order) in C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\Controllers\OrdersController.cs:line 46
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-07 12:53:56.134 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder - 500 null text/plain; charset=utf-8 4755.1005ms
+2024-09-07 12:54:46.640 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 12:54:46.739 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 12:54:46.769 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 12:54:46.773 +03:00 [INF] Hosting environment: Development
+2024-09-07 12:54:46.773 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 12:54:46.799 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 12:54:47.014 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 219.5839ms
+2024-09-07 12:54:47.040 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 12:54:47.040 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 12:54:47.047 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 3.4663ms
+2024-09-07 12:54:47.082 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.6987ms
+2024-09-07 12:54:47.118 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 12:54:47.219 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 100.4223ms
+2024-09-07 12:54:55.522 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder - application/json 334
+2024-09-07 12:54:55.529 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 12:54:55.586 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 12:54:55.609 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO]) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 12:55:02.210 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [order_items] ([book_id], [format], [order_id], [price], [quantity])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-09-07 12:55:02.237 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BookLand___Batool.Models.MyDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:5f956b21-5890-42a8-8651-053b84ace2f2
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:5f956b21-5890-42a8-8651-053b84ace2f2
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-09-07 13:07:32.827 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 13:07:32.888 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 13:07:32.896 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 13:07:32.896 +03:00 [INF] Hosting environment: Development
+2024-09-07 13:07:32.896 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 13:07:32.907 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 13:07:33.044 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 137.2374ms
+2024-09-07 13:07:33.070 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 13:07:33.073 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 3.2121ms
+2024-09-07 13:07:33.074 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 13:07:33.100 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.1191ms
+2024-09-07 13:07:33.149 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 13:07:33.235 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 85.5105ms
+2024-09-07 13:15:21.465 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 13:15:21.532 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 13:15:21.542 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 13:15:21.543 +03:00 [INF] Hosting environment: Development
+2024-09-07 13:15:21.543 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 13:15:21.555 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 13:15:21.697 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 143.4197ms
+2024-09-07 13:15:21.724 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 13:15:21.729 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 3.3343ms
+2024-09-07 13:15:21.730 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 13:15:21.754 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.8527ms
+2024-09-07 13:15:21.813 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 13:15:21.884 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 71.2106ms
+2024-09-07 13:15:36.686 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/25 - application/json 104
+2024-09-07 13:15:36.691 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 13:15:36.702 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:15:36.713 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO], Int32) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 13:15:37.428 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [order_items] ([book_id], [format], [order_id], [price], [quantity])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-09-07 13:15:37.445 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BookLand___Batool.Models.MyDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__order_ite__book___5BE2A6F2". The conflict occurred in database "BookLand", table "dbo.books", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:9903a2f9-72db-4c5b-9bd6-cf7f432ab501
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__order_ite__book___5BE2A6F2". The conflict occurred in database "BookLand", table "dbo.books", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:9903a2f9-72db-4c5b-9bd6-cf7f432ab501
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-09-07 13:15:37.449 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 733.9808ms
+2024-09-07 13:15:37.449 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:15:37.450 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__order_ite__book___5BE2A6F2". The conflict occurred in database "BookLand", table "dbo.books", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:9903a2f9-72db-4c5b-9bd6-cf7f432ab501
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder(List`1 order, Int32 userId) in C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\Controllers\OrdersController.cs:line 68
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-07 13:15:37.466 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/25 - 500 null text/plain; charset=utf-8 780.1441ms
+2024-09-07 13:19:17.053 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - null null
+2024-09-07 13:19:17.054 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 13:19:17.056 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-09-07 13:19:17.056 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-09-07 13:19:17.056 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 405 null null 3.3655ms
+2024-09-07 13:19:40.835 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - null null
+2024-09-07 13:19:40.835 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 13:19:40.837 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-09-07 13:19:40.837 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-09-07 13:19:40.838 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 405 null null 3.1459ms
+2024-09-07 13:20:31.321 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 13:20:31.394 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 13:20:31.404 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 13:20:31.405 +03:00 [INF] Hosting environment: Development
+2024-09-07 13:20:31.405 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 13:20:31.415 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 13:20:31.584 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 169.6022ms
+2024-09-07 13:20:31.603 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 13:20:31.605 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 13:20:31.608 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 2.9156ms
+2024-09-07 13:20:31.633 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.1156ms
+2024-09-07 13:20:31.725 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 13:20:31.810 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 85.2999ms
+2024-09-07 13:20:43.881 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - null null
+2024-09-07 13:20:43.886 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 13:20:43.907 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:20:43.924 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO], Int32) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 13:20:44.054 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-09-07 13:20:44.072 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 145.3397ms
+2024-09-07 13:20:44.072 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:20:44.075 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 415 null application/problem+json; charset=utf-8 193.9487ms
+2024-09-07 13:21:43.720 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - null null
+2024-09-07 13:21:43.721 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 13:21:43.722 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:21:43.723 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO], Int32) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 13:21:43.729 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-09-07 13:21:43.729 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 6.6468ms
+2024-09-07 13:21:43.730 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:21:43.730 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 415 null application/problem+json; charset=utf-8 10.3493ms
+2024-09-07 13:22:35.357 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 13:22:35.467 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 13:22:35.510 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 13:22:35.510 +03:00 [INF] Hosting environment: Development
+2024-09-07 13:22:35.511 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 13:22:35.556 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 13:22:35.905 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 13:22:35.906 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 13:22:35.909 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 370.9444ms
+2024-09-07 13:22:35.910 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 3.7731ms
+2024-09-07 13:22:36.012 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 105.9145ms
+2024-09-07 13:22:36.186 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 13:22:36.328 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 141.3787ms
+2024-09-07 13:22:48.266 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - null null
+2024-09-07 13:22:48.273 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:22:48.274 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 204 null null 7.8251ms
+2024-09-07 13:22:48.276 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - application/json 222
+2024-09-07 13:22:48.278 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:22:48.325 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:22:48.338 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO], Int32) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 13:23:15.700 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 50) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Size = 50) (DbType = AnsiString), @p12='?' (DbType = Int32), @p13='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [order_items] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2)) AS i ([book_id], [format], [order_id], [price], [quantity], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([book_id], [format], [order_id], [price], [quantity])
+VALUES (i.[book_id], i.[format], i.[order_id], i.[price], i.[quantity])
+OUTPUT INSERTED.[id], i._Position;
+2024-09-07 13:23:16.949 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-09-07 13:23:16.951 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 28609.6338ms
+2024-09-07 13:23:16.951 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:23:16.957 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 200 null null 28679.9333ms
+2024-09-07 13:23:58.545 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - null null
+2024-09-07 13:23:58.546 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:23:58.546 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 204 null null 1.2409ms
+2024-09-07 13:23:58.547 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - application/json 222
+2024-09-07 13:23:58.548 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:23:58.549 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:23:58.549 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO], Int32) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 13:31:20.592 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 13:31:20.658 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 13:31:20.669 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 13:31:20.669 +03:00 [INF] Hosting environment: Development
+2024-09-07 13:31:20.669 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 13:31:20.684 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 13:31:20.823 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 140.2309ms
+2024-09-07 13:31:20.849 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 13:31:20.852 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 2.9678ms
+2024-09-07 13:31:20.853 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 13:31:20.880 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.5778ms
+2024-09-07 13:31:21.084 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 13:31:21.197 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 113.022ms
+2024-09-07 13:31:36.291 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - null null
+2024-09-07 13:31:36.296 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:31:36.297 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 204 null null 6.0372ms
+2024-09-07 13:31:36.299 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - application/json 222
+2024-09-07 13:31:36.301 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:31:36.320 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:31:36.333 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO], Int32) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 13:31:37.600 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 50) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Size = 50) (DbType = AnsiString), @p12='?' (DbType = Int32), @p13='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Int32), @p15='?' (Size = 255) (DbType = AnsiString), @p16='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p17='?' (Size = 255) (DbType = AnsiString), @p18='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+MERGE [order_items] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2)) AS i ([book_id], [format], [order_id], [price], [quantity], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([book_id], [format], [order_id], [price], [quantity])
+VALUES (i.[book_id], i.[format], i.[order_id], i.[price], i.[quantity])
+OUTPUT INSERTED.[id], i._Position;
+INSERT INTO [orders] ([status], [total_amount], [transaction_id], [user_id])
+OUTPUT INSERTED.[id]
+VALUES (@p15, @p16, @p17, @p18);
+2024-09-07 13:31:37.647 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-09-07 13:31:37.650 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 1314.3257ms
+2024-09-07 13:31:37.651 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:31:37.657 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 200 null null 1358.1022ms
+2024-09-07 13:37:59.271 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 13:37:59.349 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 13:37:59.360 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 13:37:59.361 +03:00 [INF] Hosting environment: Development
+2024-09-07 13:37:59.361 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 13:37:59.374 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 13:37:59.524 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 150.6346ms
+2024-09-07 13:37:59.541 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 13:37:59.541 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 13:37:59.544 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 2.2468ms
+2024-09-07 13:37:59.565 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.8009ms
+2024-09-07 13:37:59.670 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 13:37:59.749 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.4196ms
+2024-09-07 13:38:13.260 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - null null
+2024-09-07 13:38:13.263 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:38:13.265 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 204 null null 5.0578ms
+2024-09-07 13:38:13.267 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - application/json 219
+2024-09-07 13:38:13.267 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:38:13.285 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:38:13.299 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO], Int32) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 13:38:14.856 +03:00 [INF] Executed DbCommand (61ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 50) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Size = 50) (DbType = AnsiString), @p12='?' (DbType = Int32), @p13='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Int32), @p15='?' (Size = 255) (DbType = AnsiString), @p16='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p17='?' (Size = 255) (DbType = AnsiString), @p18='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+MERGE [order_items] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2)) AS i ([book_id], [format], [order_id], [price], [quantity], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([book_id], [format], [order_id], [price], [quantity])
+VALUES (i.[book_id], i.[format], i.[order_id], i.[price], i.[quantity])
+OUTPUT INSERTED.[id], i._Position;
+INSERT INTO [orders] ([status], [total_amount], [transaction_id], [user_id])
+OUTPUT INSERTED.[id]
+VALUES (@p15, @p16, @p17, @p18);
+2024-09-07 13:38:14.918 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-09-07 13:38:14.921 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 1618.5147ms
+2024-09-07 13:38:14.922 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:38:14.930 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 200 null null 1663.0891ms
+2024-09-07 13:38:31.838 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - null null
+2024-09-07 13:38:31.839 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:38:31.839 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 204 null null 1.3669ms
+2024-09-07 13:38:31.841 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - application/json 219
+2024-09-07 13:38:31.841 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:38:31.843 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:38:31.843 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO], Int32) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 13:38:31.886 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 50) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Size = 50) (DbType = AnsiString), @p12='?' (DbType = Int32), @p13='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Int32), @p15='?' (Size = 255) (DbType = AnsiString), @p16='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p17='?' (Size = 255) (DbType = AnsiString), @p18='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+MERGE [order_items] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2)) AS i ([book_id], [format], [order_id], [price], [quantity], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([book_id], [format], [order_id], [price], [quantity])
+VALUES (i.[book_id], i.[format], i.[order_id], i.[price], i.[quantity])
+OUTPUT INSERTED.[id], i._Position;
+INSERT INTO [orders] ([status], [total_amount], [transaction_id], [user_id])
+OUTPUT INSERTED.[id]
+VALUES (@p15, @p16, @p17, @p18);
+2024-09-07 13:38:31.888 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-09-07 13:38:31.888 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 44.6017ms
+2024-09-07 13:38:31.888 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:38:31.888 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 200 null null 47.5412ms
+2024-09-07 13:40:22.642 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 13:40:22.736 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 13:40:22.748 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 13:40:22.748 +03:00 [INF] Hosting environment: Development
+2024-09-07 13:40:22.748 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 13:40:22.761 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 13:40:22.905 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 144.0784ms
+2024-09-07 13:40:22.931 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 13:40:22.934 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 13:40:22.937 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 2.2779ms
+2024-09-07 13:40:22.953 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.957ms
+2024-09-07 13:40:23.127 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 13:40:23.208 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.6693ms
+2024-09-07 13:40:38.649 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - null null
+2024-09-07 13:40:38.653 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:40:38.654 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 204 null null 5.5696ms
+2024-09-07 13:40:38.656 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - application/json 219
+2024-09-07 13:40:38.657 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:40:38.674 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:40:38.687 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO], Int32) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 13:40:40.109 +03:00 [INF] Executed DbCommand (42ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 50) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Size = 50) (DbType = AnsiString), @p12='?' (DbType = Int32), @p13='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Int32), @p15='?' (Size = 255) (DbType = AnsiString), @p16='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p17='?' (Size = 255) (DbType = AnsiString), @p18='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+MERGE [order_items] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2)) AS i ([book_id], [format], [order_id], [price], [quantity], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([book_id], [format], [order_id], [price], [quantity])
+VALUES (i.[book_id], i.[format], i.[order_id], i.[price], i.[quantity])
+OUTPUT INSERTED.[id], i._Position;
+INSERT INTO [orders] ([status], [total_amount], [transaction_id], [user_id])
+OUTPUT INSERTED.[id]
+VALUES (@p15, @p16, @p17, @p18);
+2024-09-07 13:40:40.153 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BookLand___Batool.Models.MyDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:8a892f7f-2b14-4e45-b8a9-55a1c24ff9cb
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:8a892f7f-2b14-4e45-b8a9-55a1c24ff9cb
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-09-07 13:40:40.157 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 1466.9902ms
+2024-09-07 13:40:40.158 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:40:40.158 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:8a892f7f-2b14-4e45-b8a9-55a1c24ff9cb
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder(List`1 order, Int32 userId) in C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\Controllers\OrdersController.cs:line 72
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-07 13:40:40.186 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 500 null text/plain; charset=utf-8 1529.7902ms
+2024-09-07 13:41:28.460 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 13:41:28.549 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 13:41:28.564 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 13:41:28.564 +03:00 [INF] Hosting environment: Development
+2024-09-07 13:41:28.564 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 13:41:28.582 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 13:41:28.771 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 191.048ms
+2024-09-07 13:41:28.794 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 13:41:28.794 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 13:41:28.797 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 2.4927ms
+2024-09-07 13:41:28.820 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.2094ms
+2024-09-07 13:41:28.921 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 13:41:29.014 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 92.7878ms
+2024-09-07 13:41:41.267 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - null null
+2024-09-07 13:41:41.272 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:41:41.273 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 204 null null 6.6904ms
+2024-09-07 13:41:41.276 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - application/json 219
+2024-09-07 13:41:41.277 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:41:41.303 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:41:41.323 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO], Int32) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 13:41:42.620 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 50) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Size = 50) (DbType = AnsiString), @p12='?' (DbType = Int32), @p13='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Int32), @p15='?' (Size = 255) (DbType = AnsiString), @p16='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p17='?' (Size = 255) (DbType = AnsiString), @p18='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+MERGE [order_items] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2)) AS i ([book_id], [format], [order_id], [price], [quantity], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([book_id], [format], [order_id], [price], [quantity])
+VALUES (i.[book_id], i.[format], i.[order_id], i.[price], i.[quantity])
+OUTPUT INSERTED.[id], i._Position;
+INSERT INTO [orders] ([status], [total_amount], [transaction_id], [user_id])
+OUTPUT INSERTED.[id]
+VALUES (@p15, @p16, @p17, @p18);
+2024-09-07 13:41:42.646 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'BookLand___Batool.Models.MyDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:7f043467-3f25-4ea3-b901-2d680617c484
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:7f043467-3f25-4ea3-b901-2d680617c484
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-09-07 13:41:42.651 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 1324.7266ms
+2024-09-07 13:41:42.651 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:41:42.652 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The MERGE statement conflicted with the FOREIGN KEY constraint "FK__order_ite__order__5CD6CB2B". The conflict occurred in database "BookLand", table "dbo.orders", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:7f043467-3f25-4ea3-b901-2d680617c484
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder(List`1 order, Int32 userId) in C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\Controllers\OrdersController.cs:line 72
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-09-07 13:41:42.671 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 500 null text/plain; charset=utf-8 1395.9026ms
+2024-09-07 13:42:00.526 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 13:42:00.636 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 13:42:00.674 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 13:42:00.674 +03:00 [INF] Hosting environment: Development
+2024-09-07 13:42:00.674 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 13:42:00.701 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 13:42:00.956 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 259.3978ms
+2024-09-07 13:42:00.967 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 13:42:00.971 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 3.2844ms
+2024-09-07 13:42:00.976 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 13:42:01.014 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.5528ms
+2024-09-07 13:42:01.037 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 13:42:01.109 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 71.8772ms
+2024-09-07 13:42:39.441 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - application/json 88
+2024-09-07 13:42:39.453 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:42:39.507 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:42:39.525 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO], Int32) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 13:44:04.931 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 13:44:05.021 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 13:44:05.050 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 13:44:05.050 +03:00 [INF] Hosting environment: Development
+2024-09-07 13:44:05.050 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 13:44:05.071 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 13:44:05.237 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 168.3732ms
+2024-09-07 13:44:05.261 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 13:44:05.262 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 13:44:05.265 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 3.3885ms
+2024-09-07 13:44:05.300 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.6029ms
+2024-09-07 13:44:05.331 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 13:44:05.405 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 73.8164ms
+2024-09-07 13:44:31.565 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - application/json 88
+2024-09-07 13:44:31.575 +03:00 [INF] CORS policy execution successful.
+2024-09-07 13:44:31.621 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:44:31.634 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO], Int32) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 13:44:41.749 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (Size = 255) (DbType = AnsiString), @p1='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 255) (DbType = AnsiString), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [orders] ([status], [total_amount], [transaction_id], [user_id])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3);
+2024-09-07 13:45:05.816 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [order_items] ([book_id], [format], [order_id], [price], [quantity])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-09-07 13:45:05.822 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-09-07 13:45:05.824 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 34187.6249ms
+2024-09-07 13:45:05.824 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 13:45:05.830 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 200 null null 34264.6988ms
+2024-09-07 14:04:50.616 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 14:04:50.679 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 14:04:50.686 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 14:04:50.687 +03:00 [INF] Hosting environment: Development
+2024-09-07 14:04:50.687 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 14:04:50.699 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 14:04:50.823 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 125.8307ms
+2024-09-07 14:04:50.847 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 14:04:50.851 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 14:04:50.851 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 4.1199ms
+2024-09-07 14:04:50.873 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 22.537ms
+2024-09-07 14:04:50.918 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 14:04:50.988 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 70.3775ms
+2024-09-07 14:04:58.915 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:44387/api/Carts/deleteCart/16 - null null
+2024-09-07 14:04:58.920 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 14:04:58.943 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.CartsController.deleteCart (BookLand - Batool)'
+2024-09-07 14:04:58.957 +03:00 [INF] Route matched with {action = "deleteCart", controller = "Carts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult deleteCart(Int32) on controller BookLand___Batool.Controllers.CartsController (BookLand - Batool).
+2024-09-07 14:05:00.323 +03:00 [INF] Executed DbCommand (42ms) [Parameters=[@__cartID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[id], [c].[user_id]
+FROM [carts] AS [c]
+WHERE [c].[id] = @__cartID_0
+2024-09-07 14:05:00.463 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [carts]
+OUTPUT 1
+WHERE [id] = @p0;
+2024-09-07 14:05:00.478 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-09-07 14:05:00.484 +03:00 [INF] Executed action BookLand___Batool.Controllers.CartsController.deleteCart (BookLand - Batool) in 1521.7472ms
+2024-09-07 14:05:00.484 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.CartsController.deleteCart (BookLand - Batool)'
+2024-09-07 14:05:00.492 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:44387/api/Carts/deleteCart/16 - 204 null null 1576.7717ms
+2024-09-07 14:11:22.572 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 14:11:22.582 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 9.5337ms
+2024-09-07 14:11:22.609 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 14:11:22.610 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 1.0611ms
+2024-09-07 14:11:22.613 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 14:11:22.621 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.5428ms
+2024-09-07 14:11:22.784 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 14:11:22.791 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.3031ms
+2024-09-07 14:11:37.385 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - null null
+2024-09-07 14:11:37.387 +03:00 [INF] CORS policy execution successful.
+2024-09-07 14:11:37.388 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 204 null null 2.448ms
+2024-09-07 14:11:37.389 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - application/json 219
+2024-09-07 14:11:37.390 +03:00 [INF] CORS policy execution successful.
+2024-09-07 14:11:37.391 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 14:11:37.393 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO], Int32) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 14:11:37.467 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 255) (DbType = AnsiString), @p1='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 255) (DbType = AnsiString), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [orders] ([status], [total_amount], [transaction_id], [user_id])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3);
+2024-09-07 14:11:37.506 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 50) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Size = 50) (DbType = AnsiString), @p12='?' (DbType = Int32), @p13='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [order_items] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2)) AS i ([book_id], [format], [order_id], [price], [quantity], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([book_id], [format], [order_id], [price], [quantity])
+VALUES (i.[book_id], i.[format], i.[order_id], i.[price], i.[quantity])
+OUTPUT INSERTED.[id], i._Position;
+2024-09-07 14:11:37.510 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-09-07 14:11:37.510 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 117.1737ms
+2024-09-07 14:11:37.510 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 14:11:37.511 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 200 null null 121.8541ms
+2024-09-07 14:11:37.516 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Carts/deleteCart/16 - null null
+2024-09-07 14:11:37.517 +03:00 [INF] No CORS policy found for the specified request.
+2024-09-07 14:11:37.519 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-09-07 14:11:37.519 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-09-07 14:11:37.520 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Carts/deleteCart/16 - 405 null null 3.3327ms
+2024-09-07 14:11:57.601 +03:00 [INF] User profile is available. Using 'C:\Users\Orange\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 14:11:57.747 +03:00 [WRN] The WebRootPath was not found: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool\wwwroot. Static files may be unavailable.
+2024-09-07 14:11:57.755 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 14:11:57.755 +03:00 [INF] Hosting environment: Development
+2024-09-07 14:11:57.755 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\project 7\github - batool\Batool---Project-7\Back-End\BookLand - Batool\BookLand - Batool
+2024-09-07 14:11:57.767 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/index.html - null null
+2024-09-07 14:11:57.915 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/index.html - 200 null text/html;charset=utf-8 148.5366ms
+2024-09-07 14:11:57.962 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_vs/browserLink - null null
+2024-09-07 14:11:57.962 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 14:11:57.965 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_framework/aspnetcore-browser-refresh.js - 200 13769 application/javascript; charset=utf-8 2.6622ms
+2024-09-07 14:11:57.985 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.5894ms
+2024-09-07 14:11:58.170 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - null null
+2024-09-07 14:11:58.264 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44387/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 94.242ms
+2024-09-07 14:12:01.996 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - null null
+2024-09-07 14:12:01.999 +03:00 [INF] CORS policy execution successful.
+2024-09-07 14:12:02.001 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 204 null null 5.1558ms
+2024-09-07 14:12:02.002 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - application/json 219
+2024-09-07 14:12:02.003 +03:00 [INF] CORS policy execution successful.
+2024-09-07 14:12:02.024 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 14:12:02.036 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO], Int32) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 14:12:03.312 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[@p0='?' (Size = 255) (DbType = AnsiString), @p1='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 255) (DbType = AnsiString), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [orders] ([status], [total_amount], [transaction_id], [user_id])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3);
+2024-09-07 14:12:03.416 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 50) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Size = 50) (DbType = AnsiString), @p12='?' (DbType = Int32), @p13='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [order_items] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2)) AS i ([book_id], [format], [order_id], [price], [quantity], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([book_id], [format], [order_id], [price], [quantity])
+VALUES (i.[book_id], i.[format], i.[order_id], i.[price], i.[quantity])
+OUTPUT INSERTED.[id], i._Position;
+2024-09-07 14:12:03.425 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-09-07 14:12:03.429 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 1389.4708ms
+2024-09-07 14:12:03.429 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 14:12:03.434 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Carts/deleteCart/16 - null null
+2024-09-07 14:12:03.435 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 200 null null 1432.3435ms
+2024-09-07 14:12:03.436 +03:00 [INF] CORS policy execution successful.
+2024-09-07 14:12:03.436 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Carts/deleteCart/16 - 204 null null 2.0415ms
+2024-09-07 14:12:03.439 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:44387/api/Carts/deleteCart/16 - null null
+2024-09-07 14:12:03.439 +03:00 [INF] CORS policy execution successful.
+2024-09-07 14:12:03.440 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.CartsController.deleteCart (BookLand - Batool)'
+2024-09-07 14:12:03.443 +03:00 [INF] Route matched with {action = "deleteCart", controller = "Carts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult deleteCart(Int32) on controller BookLand___Batool.Controllers.CartsController (BookLand - Batool).
+2024-09-07 14:12:03.656 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__cartID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[id], [c].[user_id]
+FROM [carts] AS [c]
+WHERE [c].[id] = @__cartID_0
+2024-09-07 14:12:03.668 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-09-07 14:12:03.699 +03:00 [INF] Executed action BookLand___Batool.Controllers.CartsController.deleteCart (BookLand - Batool) in 256.4597ms
+2024-09-07 14:12:03.700 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.CartsController.deleteCart (BookLand - Batool)'
+2024-09-07 14:12:03.700 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:44387/api/Carts/deleteCart/16 - 404 null application/problem+json; charset=utf-8 261.4743ms
+2024-09-07 14:15:47.666 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - null null
+2024-09-07 14:15:47.667 +03:00 [INF] CORS policy execution successful.
+2024-09-07 14:15:47.667 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 204 null null 0.8571ms
+2024-09-07 14:15:47.669 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - application/json 219
+2024-09-07 14:15:47.669 +03:00 [INF] CORS policy execution successful.
+2024-09-07 14:15:47.671 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 14:15:47.671 +03:00 [INF] Route matched with {action = "MoveItemsToOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult MoveItemsToOrder(System.Collections.Generic.List`1[BookLand___Batool.DTOs.OrderItemsDTO], Int32) on controller BookLand___Batool.Controllers.OrdersController (BookLand - Batool).
+2024-09-07 14:15:47.689 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 255) (DbType = AnsiString), @p1='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 255) (DbType = AnsiString), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [orders] ([status], [total_amount], [transaction_id], [user_id])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2, @p3);
+2024-09-07 14:15:47.698 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 50) (DbType = AnsiString), @p2='?' (DbType = Int32), @p3='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (Size = 50) (DbType = AnsiString), @p7='?' (DbType = Int32), @p8='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (Size = 50) (DbType = AnsiString), @p12='?' (DbType = Int32), @p13='?' (Precision = 10) (Scale = 2) (DbType = Decimal), @p14='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+MERGE [order_items] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, 0),
+(@p5, @p6, @p7, @p8, @p9, 1),
+(@p10, @p11, @p12, @p13, @p14, 2)) AS i ([book_id], [format], [order_id], [price], [quantity], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([book_id], [format], [order_id], [price], [quantity])
+VALUES (i.[book_id], i.[format], i.[order_id], i.[price], i.[quantity])
+OUTPUT INSERTED.[id], i._Position;
+2024-09-07 14:15:47.699 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-09-07 14:15:47.699 +03:00 [INF] Executed action BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool) in 27.5873ms
+2024-09-07 14:15:47.699 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.OrdersController.MoveItemsToOrder (BookLand - Batool)'
+2024-09-07 14:15:47.700 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44387/api/Orders/MoveItemsToOrder/16 - 200 null null 31.1276ms
+2024-09-07 14:15:47.704 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44387/api/Carts/deleteCart/17 - null null
+2024-09-07 14:15:47.704 +03:00 [INF] CORS policy execution successful.
+2024-09-07 14:15:47.704 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44387/api/Carts/deleteCart/17 - 204 null null 0.4621ms
+2024-09-07 14:15:47.706 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:44387/api/Carts/deleteCart/17 - null null
+2024-09-07 14:15:47.706 +03:00 [INF] CORS policy execution successful.
+2024-09-07 14:15:47.706 +03:00 [INF] Executing endpoint 'BookLand___Batool.Controllers.CartsController.deleteCart (BookLand - Batool)'
+2024-09-07 14:15:47.706 +03:00 [INF] Route matched with {action = "deleteCart", controller = "Carts"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult deleteCart(Int32) on controller BookLand___Batool.Controllers.CartsController (BookLand - Batool).
+2024-09-07 14:15:47.711 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__cartID_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[id], [c].[user_id]
+FROM [carts] AS [c]
+WHERE [c].[id] = @__cartID_0
+2024-09-07 14:15:47.731 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [carts]
+OUTPUT 1
+WHERE [id] = @p0;
+2024-09-07 14:15:47.733 +03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-09-07 14:15:47.733 +03:00 [INF] Executed action BookLand___Batool.Controllers.CartsController.deleteCart (BookLand - Batool) in 26.697ms
+2024-09-07 14:15:47.733 +03:00 [INF] Executed endpoint 'BookLand___Batool.Controllers.CartsController.deleteCart (BookLand - Batool)'
+2024-09-07 14:15:47.733 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:44387/api/Carts/deleteCart/17 - 204 null null 27.4441ms

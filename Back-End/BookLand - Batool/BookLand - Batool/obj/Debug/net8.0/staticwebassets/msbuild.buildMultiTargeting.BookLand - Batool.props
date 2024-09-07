@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BookLand - Batool.props" />
+</Project>

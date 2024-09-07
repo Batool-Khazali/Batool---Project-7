@@ -1,0 +1,6 @@
+@BookLand___Batool_HostAddress = http://localhost:5222
+
+GET {{BookLand___Batool_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
